@@ -5,13 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .deals {
-            display: flex;
-            gap: 20px;
+         body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        /* background: linear-gradient(145deg, #12192a, #102b55, #093a89, #0c4fea); */
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #0f172a, #1e3a8a, #0ea5e9, #22c55e);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
         }
-        .deals div {
-            font-size: 24px;
+        50% {
+          background-position: 100% 50%;
         }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+        background: linear-gradient(90deg, #00f5a0, #00d9f5);
+        background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .deals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 500px;
+        padding: 30px 40px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .deals div {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #e2e8f0;
+      }
+
+      .deals span {
+        display: block;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 8px;
+        color: #00f5a0;
+        text-shadow: 0 0 10px rgba(0, 245, 160, 0.5);
+      }
+
+      h2.offer-end {
+        margin-top: 25px;
+        font-size: 22px;
+          color: #f8fafc;
+       text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        letter-spacing: 1px;
+      }
     </style>
   </head>
   <body>
